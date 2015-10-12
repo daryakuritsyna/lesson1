@@ -30,11 +30,11 @@ class MyArray
   end
 
   def odd
-    @array.select {|i| i % 2 > 0 }
+    @array.select { |i| i % 2 > 0 }
   end
 
   def multiple_to_three
-    @array.select {|i| i % 3 == 0 }
+    @array.select { |i| i % 3 == 0 }
   end
 
   def uniq
@@ -42,27 +42,26 @@ class MyArray
   end
 
   def devide_on_ten
-    @array.collect { |i| i / 10.to_f}
+    @array.collect { |i| i / 10.to_f }
   end
 
   def chars
-    @array.collect { |i| ('a'... 'z').to_a[i - 1].to_sym }
+    @array.collect { |i| ('a'...'z').to_a[i - 1].to_sym }
   end
 
   def switch
-    max = array.index(array.min)
-    min = array.index(array.max)
-    array[max], array[min] = array[min], array[max]
-    array
+    mx = @array.index(@array.mn)
+    mn = @array.index(@array.mx)
+    @array[mx], @array[mn] = @array[mn], @array[mx]
+    @array
   end
 
   def before_min
-    if
-     @array.index(array.min) == 0
+    if @array.index(array.min) == 0
       []
     else
-     @array[@array.index(array.min) - 1]
-      end
+      @array[@array.index(array.min) - 1]
+    end
   end
 
   def three_smallest
