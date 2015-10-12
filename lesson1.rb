@@ -7,7 +7,9 @@ class Lesson1
   def age(birthday)
     if birthday
       days = (Date.today - Date.parse(birthday)).to_i
-      "Я живу #{(days / 365).to_i} или #{days} дней или #{days * 24} часов или #{days * 24 * 60} минут или #{days * 24 * 60 * 60} секунд"
+      "Я живу #{(days / 365).to_i} или #{days} дней
+       или #{days * 24} часов или #{days * 24 * 60} минут
+       или #{days * 24 * 60 * 60} секунд"
     else
       'Invalid Date Format'
     end
