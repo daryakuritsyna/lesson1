@@ -50,8 +50,8 @@ class MyArray
   end
 
   def switch
-    mx = @array.index(@array.mn)
-    mn = @array.index(@array.mx)
+    mx = @array.index(@array.min)
+    mn = @array.index(@array.max)
     @array[mx], @array[mn] = @array[mn], @array[mx]
     @array
   end
